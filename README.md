@@ -2,7 +2,7 @@
 
 ## 第一步 安装环境
 
-&emsp;&emsp;需要安装python下qt的环境及工具，<font color=red>**终端terminal下面运行指令**</font>，我这里已经安装，所以显示已经有了吗，两个都需要安装，需要记住安装的位置，一会儿需要设置环境变量。
+&emsp;&emsp;需要安装python下qt的环境及工具，<font color=red>**终端terminal下面运行指令**</font>，我这里已经安装，所以显示已经有了，两个都需要安装，需要记住安装的位置，一会儿需要设置环境变量。
 ```python
 pip install PyQt5
 pip install PyQt5-tools
@@ -81,3 +81,10 @@ Requirement already satisfied: PyQt5-sip<13,>=12.8 in c:\users\guoqing.zhang\app
 >
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210308162023129.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NDMwMzcx,size_16,color_FFFFFF,t_70#pic_center)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210308162043846.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NDMwMzcx,size_16,color_FFFFFF,t_70#pic_center)
+
+## 关于本项目
++ 项目作者：ZGQ
++ 邮箱：Guoqingzhang0813@163.com
++ 开发环境：PtQT5 版本5..15,Qt_Designer,Python 3.7
++ 适用平台：WIndow、
+
