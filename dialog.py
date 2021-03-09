@@ -228,6 +228,8 @@ class Ui_Dialog(QWidget):
             return
         self.SeedKeyAddr.setText(fileName_choose)
         AllGlogol.set_value('Addr',fileName_choose)
+
+        
         return
 
 
