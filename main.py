@@ -23,7 +23,7 @@ class MainTabWindow(QTabWidget):
         self.setWindowTitle('OTA_Console')
         self.setWindowIcon(QIcon('E:/WorkSpace/BT/tool/Download/OTA.jpg'))
 
-        self.Tab_Demo = Ui_MainWindow()
+        self.Tab_Demo = Ui_Demo()
         self.Tab_dialog = Ui_Dialog()
 
 
