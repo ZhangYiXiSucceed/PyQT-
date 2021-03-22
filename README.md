@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # PyQT-
-=======
 >环境：<font color=red>**Pycharm IDE+PtQT+Qt designer**</font>
 
 ## 第一步 安装环境
@@ -27,7 +25,7 @@ Requirement already satisfied: PyQt5-sip<13,>=12.8 in c:\users\guoqing.zhang\app
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210308160043879.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NDMwMzcx,size_16,color_FFFFFF,t_70#pic_center)
 
 ## 第二步 Pycharm配置外部工具	
-	
+
 &emsp;&emsp;打开Pycharm，点击File-->Setting-->Tools-->External Tools，选择+号新建，第一个是qt designer，program为路径，arguments不填，working directory 为工作路径，填 $ FileDir $，为当前工作目录，这个工具可以<font color=red>**直接打开qt designer**</font>（qt 设计师）。
 	
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/202103081601196.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NDMwMzcx,size_16,color_FFFFFF,t_70#pic_center)
@@ -89,6 +87,4 @@ Requirement already satisfied: PyQt5-sip<13,>=12.8 in c:\users\guoqing.zhang\app
 + 项目作者：ZGQ
 + 邮箱：Guoqingzhang0813@163.com
 + 开发环境：PtQT5 版本5..15,Qt_Designer,Python 3.7
-+ 适用平台：WIndow、
-
->>>>>>> 151bdc28748e30a54026e64a802ffa5e14d8701c
++ 适用平台：WIndow
