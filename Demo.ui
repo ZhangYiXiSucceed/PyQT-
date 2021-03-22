@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="tbnOpen">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开端口</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tbnClose">
+    <property name="geometry">
+     <rect>
+      <x>312</x>
+      <y>20</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>关闭端口</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>数据接收</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cBPortName">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tEReceiveData">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>761</width>
+      <height>371</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lESend">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>510</y>
+      <width>631</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>480</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>数据发送</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="tbnSend">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>510</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>发送</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Time">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>24</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="tbnClear">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>70</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清空数据</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pBSelect">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>70</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择画笔</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>70</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
