@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>809</width>
+    <height>619</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,10 @@
    <widget class="QPushButton" name="tbnOpen">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>360</x>
       <y>20</y>
       <width>101</width>
-      <height>41</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -30,7 +30,7 @@
    <widget class="QPushButton" name="tbnClose">
     <property name="geometry">
      <rect>
-      <x>312</x>
+      <x>640</x>
       <y>20</y>
       <width>121</width>
       <height>41</height>
@@ -44,8 +44,8 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>80</y>
-      <width>191</width>
+      <y>160</y>
+      <width>71</width>
       <height>41</height>
      </rect>
     </property>
@@ -56,10 +56,10 @@
    <widget class="QComboBox" name="cBPortName">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>110</x>
       <y>20</y>
-      <width>151</width>
-      <height>41</height>
+      <width>191</width>
+      <height>31</height>
      </rect>
     </property>
    </widget>
@@ -67,9 +67,9 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>110</y>
+      <y>190</y>
       <width>761</width>
-      <height>371</height>
+      <height>291</height>
      </rect>
     </property>
    </widget>
@@ -88,7 +88,7 @@
      <rect>
       <x>20</x>
       <y>480</y>
-      <width>191</width>
+      <width>71</width>
       <height>41</height>
      </rect>
     </property>
@@ -107,19 +107,6 @@
     </property>
     <property name="text">
      <string>发送</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_Time">
-    <property name="geometry">
-     <rect>
-      <x>470</x>
-      <y>24</y>
-      <width>301</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
     </property>
    </widget>
    <widget class="QToolButton" name="tbnClear">
@@ -151,8 +138,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>70</y>
+      <x>520</x>
+      <y>20</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -161,13 +148,72 @@
      <string>PushButton</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>本地IP地址：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>远程IP地址：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lEServerIP">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>70</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lEServerPort">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>70</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>60</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>端口：</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>809</width>
      <height>26</height>
     </rect>
    </property>

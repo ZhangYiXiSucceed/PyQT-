@@ -11,6 +11,7 @@ import  AllGlogol
 
 from Demo import *
 from dialog import *
+from Client_and_Server import Ui_Demo
 
 
 Num = 0x01

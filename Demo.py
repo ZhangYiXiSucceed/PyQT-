@@ -9,47 +9,38 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QApplication, QMainWindow
-from PyQt5.QtCore import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
 
-import  os
-import sys
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(800, 600)
+        MainWindow.resize(809, 619)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.tbnOpen = QtWidgets.QPushButton(self.centralwidget)
-        self.tbnOpen.setGeometry(QtCore.QRect(190, 20, 101, 41))
+        self.tbnOpen.setGeometry(QtCore.QRect(360, 20, 101, 31))
         self.tbnOpen.setObjectName("tbnOpen")
         self.tbnClose = QtWidgets.QPushButton(self.centralwidget)
-        self.tbnClose.setGeometry(QtCore.QRect(312, 20, 121, 41))
+        self.tbnClose.setGeometry(QtCore.QRect(640, 20, 121, 41))
         self.tbnClose.setObjectName("tbnClose")
         self.label_1 = QtWidgets.QLabel(self.centralwidget)
-        self.label_1.setGeometry(QtCore.QRect(20, 80, 191, 41))
+        self.label_1.setGeometry(QtCore.QRect(20, 160, 71, 41))
         self.label_1.setObjectName("label_1")
         self.cBPortName = QtWidgets.QComboBox(self.centralwidget)
-        self.cBPortName.setGeometry(QtCore.QRect(20, 20, 151, 41))
+        self.cBPortName.setGeometry(QtCore.QRect(110, 20, 191, 31))
         self.cBPortName.setObjectName("cBPortName")
         self.tEReceiveData = QtWidgets.QTextEdit(self.centralwidget)
-        self.tEReceiveData.setGeometry(QtCore.QRect(20, 110, 761, 371))
+        self.tEReceiveData.setGeometry(QtCore.QRect(20, 190, 761, 291))
         self.tEReceiveData.setObjectName("tEReceiveData")
         self.lESend = QtWidgets.QLineEdit(self.centralwidget)
         self.lESend.setGeometry(QtCore.QRect(20, 510, 631, 31))
         self.lESend.setObjectName("lESend")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(20, 480, 191, 41))
+        self.label_2.setGeometry(QtCore.QRect(20, 480, 71, 41))
         self.label_2.setObjectName("label_2")
         self.tbnSend = QtWidgets.QToolButton(self.centralwidget)
         self.tbnSend.setGeometry(QtCore.QRect(670, 510, 111, 31))
         self.tbnSend.setObjectName("tbnSend")
-        self.label_Time = QtWidgets.QLabel(self.centralwidget)
-        self.label_Time.setGeometry(QtCore.QRect(470, 24, 301, 31))
-        self.label_Time.setObjectName("label_Time")
         self.tbnClear = QtWidgets.QToolButton(self.centralwidget)
         self.tbnClear.setGeometry(QtCore.QRect(670, 70, 111, 31))
         self.tbnClear.setObjectName("tbnClear")
@@ -57,11 +48,26 @@ class Ui_MainWindow(object):
         self.pBSelect.setGeometry(QtCore.QRect(540, 70, 101, 31))
         self.pBSelect.setObjectName("pBSelect")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(430, 70, 93, 28))
+        self.pushButton.setGeometry(QtCore.QRect(520, 20, 93, 28))
         self.pushButton.setObjectName("pushButton")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(10, 20, 101, 41))
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(10, 60, 101, 51))
+        self.label_4.setObjectName("label_4")
+        self.lEServerIP = QtWidgets.QLineEdit(self.centralwidget)
+        self.lEServerIP.setGeometry(QtCore.QRect(110, 70, 191, 31))
+        self.lEServerIP.setObjectName("lEServerIP")
+        self.lEServerPort = QtWidgets.QLineEdit(self.centralwidget)
+        self.lEServerPort.setGeometry(QtCore.QRect(360, 70, 101, 31))
+        self.lEServerPort.setObjectName("lEServerPort")
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(310, 60, 51, 51))
+        self.label_5.setObjectName("label_5")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 809, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -79,23 +85,9 @@ class Ui_MainWindow(object):
         self.label_1.setText(_translate("MainWindow", "数据接收"))
         self.label_2.setText(_translate("MainWindow", "数据发送"))
         self.tbnSend.setText(_translate("MainWindow", "发送"))
-        self.label_Time.setText(_translate("MainWindow", "TextLabel"))
         self.tbnClear.setText(_translate("MainWindow", "清空数据"))
         self.pBSelect.setText(_translate("MainWindow", "选择画笔"))
         self.pushButton.setText(_translate("MainWindow", "PushButton"))
-
-
-class Ui_Demo(QtWidgets.QMainWindow):
-    def __init__(self):
-        super(Ui_Demo, self).__init__()
-        self._ui = Ui_MainWindow()
-        self._ui.setupUi(self)
-
-
-
-if __name__ == '__main__':
-
-    app = QApplication(sys.argv)
-    MainWindow = Ui_Demo()
-    MainWindow.show()
-    sys.exit(app.exec_())
+        self.label_3.setText(_translate("MainWindow", "本地IP地址："))
+        self.label_4.setText(_translate("MainWindow", "远程IP地址："))
+        self.label_5.setText(_translate("MainWindow", "端口："))

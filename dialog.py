@@ -38,6 +38,7 @@ class Ui_Dialog(QWidget):
         self.SelectAddr.setFixedHeight(30)
         self.SeedKeyAddr.setPlaceholderText('E:/WorkSpace/BT/DemoProject/SeednKey.dll')
         self.SelectAddr.clicked.connect(self.Slot_SelectAddr)
+        self.SeedKeyAddr.setDisabled(True)
 
 
 
@@ -83,6 +84,7 @@ class Ui_Dialog(QWidget):
         self.Btn_Cancel.setDisabled(False)
         self.Btn_Start.clicked.connect(self.Slot_SeedKeyCalculate)
         self.Btn_Cancel.clicked.connect(self.Slot_CancleFunction)
+
 
         self.Group_Console = QGroupBox()
         self.Group_Seedkey = QGroupBox()
@@ -154,69 +156,72 @@ class Ui_Dialog(QWidget):
         if self.Seed.text() == '':
             qw.QMessageBox.critical(self, "错误", "seed 不能为空！", qw.QMessageBox.Abort | qw.QMessageBox.Cancel)
         else:
-            seed = []
-            key = []
-            LevelNumber = int(self.Level.currentText(), 16)
+            if  AllGlogol.get_value('Addr') == None:
+                qw.QMessageBox.critical(self, "错误", "seedkey算法库不能为空！", qw.QMessageBox.Abort | qw.QMessageBox.Cancel)
+            else:
+                seed = []
+                key = []
+                LevelNumber = int(self.Level.currentText(), 16)
 
-            # seedNumber = int(self.Seed.text(),16)
-            # LevelNumber = int(self.Level.currentText(),16)
-            #
-            # print(seedNumber)
-            # print(LevelNumber)
-            #
-            # seed = bytearray([0x00,0x00,0x00,0x00])
-            # seed[0] = int(seedNumber / 65536 / 256)
-            # seed[1] = int(seedNumber / 65536 % 256)
-            # seed[2] = int(seedNumber / 256 % 256)
-            # seed[3] = int(seedNumber % 256)
-            #
-            # print(seed[0],seed[1],seed[2],seed[3])
-            #
-            # key = SeednKey.SeedToKeyFromDll(seed,LevelNumber)
-            #
-            # KeyNumber = key[0]*65536*256+key[1]*65536+key[2]*256+key[3]
-            #
-            # str = ''
-            # str +='0x';
-            # str +='%x' %KeyNumber
-            # self.Key.setText(str)
+                # seedNumber = int(self.Seed.text(),16)
+                # LevelNumber = int(self.Level.currentText(),16)
+                #
+                # print(seedNumber)
+                # print(LevelNumber)
+                #
+                # seed = bytearray([0x00,0x00,0x00,0x00])
+                # seed[0] = int(seedNumber / 65536 / 256)
+                # seed[1] = int(seedNumber / 65536 % 256)
+                # seed[2] = int(seedNumber / 256 % 256)
+                # seed[3] = int(seedNumber % 256)
+                #
+                # print(seed[0],seed[1],seed[2],seed[3])
+                #
+                # key = SeednKey.SeedToKeyFromDll(seed,LevelNumber)
+                #
+                # KeyNumber = key[0]*65536*256+key[1]*65536+key[2]*256+key[3]
+                #
+                # str = ''
+                # str +='0x';
+                # str +='%x' %KeyNumber
+                # self.Key.setText(str)
 
-            seed = self.Seed.text().split(' ')
+                seed = self.Seed.text().split(' ')
 
-            # print(seed)
-            seedNumber = []
-            seedNumber = bytearray([0x00, 0x00, 0x00, 0x00])
+                # print(seed)
+                seedNumber = []
+                seedNumber = bytearray([0x00, 0x00, 0x00, 0x00])
 
-            seedNumber[0] = int(seed[0],16)
-            seedNumber[1] = int(seed[1],16)
-            seedNumber[2] = int(seed[2],16)
-            seedNumber[3] = int(seed[3],16)
+                seedNumber[0] = int(seed[0],16)
+                seedNumber[1] = int(seed[1],16)
+                seedNumber[2] = int(seed[2],16)
+                seedNumber[3] = int(seed[3],16)
 
-            key = SeednKey.SeedToKeyFromDll(seedNumber, LevelNumber)
+                key = SeednKey.SeedToKeyFromDll(seedNumber, LevelNumber)
 
-            if key == None:
-                return
+                if key == None:
+                    return
 
-            keyNumber = ['00','00','00','00']
+                keyNumber = ['00','00','00','00']
 
-            # print(keyNumber[0])
+                # print(keyNumber[0])
 
-            keyNumber[0] = '%x' %key[0]
-            keyNumber[1] = '%x' %key[1]
-            keyNumber[2] = '%x' %key[2]
-            keyNumber[3] = '%x' %key[3]
+                keyNumber[0] = '%x' %key[0]
+                keyNumber[1] = '%x' %key[1]
+                keyNumber[2] = '%x' %key[2]
+                keyNumber[3] = '%x' %key[3]
 
-            Numstr = ''
-            Numstr += keyNumber[0]
-            Numstr += ' '
-            Numstr += keyNumber[1]
-            Numstr += ' '
-            Numstr += keyNumber[2]
-            Numstr += ' '
-            Numstr += keyNumber[3]
-            Numstr += ' '
+                Numstr = ''
+                Numstr += keyNumber[0]
+                Numstr += ' '
+                Numstr += keyNumber[1]
+                Numstr += ' '
+                Numstr += keyNumber[2]
+                Numstr += ' '
+                Numstr += keyNumber[3]
+                Numstr += ' '
 
-            self.Key.setText(Numstr)
+                self.Key.setText(Numstr)
 
         return
     def Slot_CancleFunction(self):

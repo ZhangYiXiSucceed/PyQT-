@@ -9,7 +9,7 @@ import AllGlogol
 
 def SeedToKeyFromDll(SeedBytes,Level):
 
-    if AllGlogol.get_value('Addr') == '':
+    if AllGlogol.get_value('Addr') == None:
         return
     temp_addr = AllGlogol.get_value('Addr')
     print(temp_addr)
